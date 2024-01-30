@@ -1,38 +1,94 @@
 .App {
-  text-align: center;
+  /* max-width: 860px; */
+  /* margin: auto 400px; */
+  /* margin-left: 30px; */
+  /* width: auto; */
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.game-setup {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: rgb(236, 207, 207);
+  border: 2px solid white;
+  padding: 6px 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  background-color: rgb(236, 169, 169);
+}
+
+.card-grid {
+  /* position: relative; */
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width:50%;
+  height: 100%;
+  margin-left: 25%;
+  margin-top: 20px;
+
+}
+
+.game-level button{
+  border: 2px solid white;;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+.game-option button{
+  border: 2px solid white;;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+.game-option .hidden {
+  display: none;
+}
+
+.game-option .displayed {
+  border: 2px solid white;;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+/* countdown */
+
+.countdown {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+.countdown .hidden {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.countdown .displayed {
+  display: inline-block;
+  border: 2px solid white;
+  padding: 3px 20px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
